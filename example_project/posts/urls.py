@@ -1,4 +1,4 @@
-from guardian.compat import url
+from django.conf.urls import url
 
 from posts import views
 
