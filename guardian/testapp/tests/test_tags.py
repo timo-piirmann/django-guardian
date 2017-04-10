@@ -1,11 +1,12 @@
 from __future__ import unicode_literals
 
+from django.contrib.auth import get_user_model
 from django.contrib.auth.models import Group, AnonymousUser
 from django.contrib.contenttypes.models import ContentType
 from django.template import Template, Context, TemplateSyntaxError
 from django.test import TestCase
 
-from guardian.compat import get_user_model, template_debug_getter, template_debug_setter
+from guardian.compat import template_debug_getter, template_debug_setter
 from guardian.exceptions import NotUserNorGroup
 from guardian.models import UserObjectPermission, GroupObjectPermission
 

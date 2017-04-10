@@ -1,10 +1,10 @@
 from __future__ import unicode_literals
 
 import django
+from django.contrib.auth import get_user_model
 from django.db.models import signals
 
 from guardian.conf import settings as guardian_settings
-from guardian.compat import get_user_model
 from guardian.compat import import_string
 
 
