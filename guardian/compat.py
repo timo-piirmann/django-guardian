@@ -14,14 +14,6 @@ __all__ = [
     'Group',
     'Permission',
     'AnonymousUser',
-    'get_user_model',
-    'import_string',
-    'user_model_label',
-    'url',
-    'patterns',
-    'include',
-    'handler404',
-    'handler500',
 ]
 
 # Django 1.5 compatibility utilities, providing support for custom User models.
@@ -109,8 +101,6 @@ def create_permissions(*args, **kwargs):
     if len(args) > 1 and isinstance(args[1], (list, tuple)):
         args = args[:1] + args[2:]
     return original_create_permissions(*args, **kwargs)
-
-__all__ = ['User', 'Group', 'Permission', 'AnonymousUser']
 
 
 def get_model_name(model):
