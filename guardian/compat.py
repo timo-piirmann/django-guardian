@@ -2,7 +2,7 @@ from __future__ import unicode_literals
 
 from django.conf import settings
 from django.conf.urls import handler404, handler500, include, url
-from django.contrib.auth.models import AnonymousUser, Group, Permission
+from django.contrib.auth.models import AnonymousUser, Group, Permission, User
 from importlib import import_module
 
 import django
